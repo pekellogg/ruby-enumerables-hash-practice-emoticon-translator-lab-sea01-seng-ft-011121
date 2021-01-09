@@ -36,13 +36,12 @@ load_library('lib/emoticons.yml')
 # get_japanese_emoticon('lib/emoticons.yml', ":)")
 
 
-# def get_english_meaning(file_name, japanese_emoticon)
-#   emoticon_library = load_library(file_name)
-#   emoticon_libary.fetch(key)
-#     if value[:japanese] == japanese_emoticon
-#       return key
-#     end
-#   end
-# end
+def get_english_meaning(file_name, japanese_emoticon)
+  emoticon_library = load_library(file_name)
+  emoticon_libary.fetch(key)
+    if value[:japanese] == japanese_emoticon
+      return key
+    end
+end
 
-# get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
+get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
