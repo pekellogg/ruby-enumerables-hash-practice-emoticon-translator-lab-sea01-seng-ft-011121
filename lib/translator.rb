@@ -7,7 +7,7 @@ def load_library(file_name)
     file_to_map[emoticon_name_key] = {:english => value[0], :japanese => value[1]}
     # binding.pry
   end
-  file_to_map
+  p file_to_map
 end
 
 load_library('lib/emoticons.yml')
@@ -34,3 +34,15 @@ load_library('lib/emoticons.yml')
 # end
 
 # get_japanese_emoticon('lib/emoticons.yml', ":)")
+
+
+def get_english_meaning(file_name, japanese_emoticon)
+  emoticon_library = load_library(file_name)
+  emoticon_libary.fetch(key)
+    if value[:japanese] == japanese_emoticon
+      return key
+    end
+  end
+end
+
+# get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
