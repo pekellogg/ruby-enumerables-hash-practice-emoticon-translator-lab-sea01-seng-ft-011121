@@ -4,7 +4,7 @@ require "yaml"
 def load_library(file_name)
   file_to_map = YAML.load_file(file_name)
   file_to_map.map do |emoticon_name_key, value|
-    file[emoticon_name_key] = {:english => value[0], "japanese": value[1]}
+    file_to_map[emoticon_name_key] = {:english => value[0], "japanese": value[1]}
     # binding.pry
   end
   p file_to_map
