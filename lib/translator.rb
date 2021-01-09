@@ -10,7 +10,7 @@ def load_library(file_name)
   p emoticons
 end
 
-# load_library('lib/emoticons.yml')
+load_library('lib/emoticons.yml')
 
 # def get_english_meaning(file_name, japanese_emoticon)
 #   emoticon_lib = load_library(file_name)
