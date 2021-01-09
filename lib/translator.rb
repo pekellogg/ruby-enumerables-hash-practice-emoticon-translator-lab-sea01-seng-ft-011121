@@ -3,8 +3,8 @@ require "yaml"
 
 def load_library(file_name)
   file = YAML.load_file(file_name)
-  file.map do |key, value|
-    file[key] = {"english": value[0], "japanese": value[1]}
+  file.map do |emoticon_name_key, value|
+    file[emoticon_name_key] = {"english": value[0], "japanese": value[1]}
   end
   emoticons
 end
