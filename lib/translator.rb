@@ -1,6 +1,6 @@
 # require "yaml"
 # # require 'pry'
-# 
+#
 # def load_library(file_name)
 #   file_to_map = YAML.load_file(file_name)
 #   file_to_map.map do |emoticon_name_key, value|
@@ -9,7 +9,7 @@
 #   end
 #   p file_to_map
 # end
-# 
+#
 # load_library('lib/emoticons.yml')
 
 # def get_english_meaning(file_name, japanese_emoticon)
