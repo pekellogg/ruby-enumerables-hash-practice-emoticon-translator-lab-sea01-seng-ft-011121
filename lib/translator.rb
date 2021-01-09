@@ -35,6 +35,3 @@ get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
 # end
 
 # get_japanese_emoticon('lib/emoticons.yml', ":)")
-
-
-
