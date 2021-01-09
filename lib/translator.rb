@@ -2,9 +2,9 @@ require "yaml"
 
 
 def load_library(file_name)
-  emoticons = YAML.load_file(file_name)
-  emoticons.map do |key, value|
-    emoticons[key] = {"english": value[0], "japanese": value[1]}
+  file = YAML.load_file(file_name)
+  file.map do |key, value|
+    file[key] = {"english": value[0], "japanese": value[1]}
   end
   emoticons
 end
