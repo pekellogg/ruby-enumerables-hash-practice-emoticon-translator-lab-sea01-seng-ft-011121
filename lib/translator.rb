@@ -12,7 +12,17 @@ end
 
 load_library('lib/emoticons.yml')
 
+def get_english_meaning(file_name, japanese_emoticon)
+  emoticon_library = load_library(file_name)
+  emoticon_library.map do |key, value|
+    if value[:japanese] == japanese_emoticon
+        return key
+    end
+  end
+  return "Sorry, that emoticon was not found"
+end
 
+get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
 
 
 # def get_japanese_emoticon(file_name, western_emoticon)
@@ -27,14 +37,4 @@ load_library('lib/emoticons.yml')
 # get_japanese_emoticon('lib/emoticons.yml', ":)")
 
 
-def get_english_meaning(file_name, japanese_emoticon)
-  emoticon_library = load_library(file_name)
-  emoticon_library.map do |key, value|
-    if value[:japanese] == japanese_emoticon
-        return key
-    end
-  end
-  return "Sorry, that emoticon was not found"
-end
 
-get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
