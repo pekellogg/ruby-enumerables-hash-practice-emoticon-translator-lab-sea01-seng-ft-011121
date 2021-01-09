@@ -1,10 +1,11 @@
 require "yaml"
-
+require 'pry'
 
 def load_library(file_name)
   file = YAML.load_file(file_name)
   file.map do |emoticon_name_key, value|
     file[emoticon_name_key] = {"english": value[0], "japanese": value[1]}
+    binding.pry
   end
   p emoticons
 end
