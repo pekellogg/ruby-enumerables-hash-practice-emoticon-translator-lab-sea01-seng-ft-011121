@@ -41,10 +41,11 @@ def get_english_meaning(file_name, japanese_emoticon)
   emoticon_library.map do |key, value|
     if value[:japanese] == japanese_emoticon
         return key
-    else
-        return "Sorry, that emoticon was not found"
+    # else
+    #     return "Sorry, that emoticon was not found"
     end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
