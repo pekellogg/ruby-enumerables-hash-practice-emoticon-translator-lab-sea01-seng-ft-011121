@@ -47,7 +47,6 @@ def get_english_meaning(file_name, japanese_emoticon)
       puts key
     else value[:japanese] != japanese_emoticon
         puts "Sorry, that emoticon was not found"
-      end
     end
   end
 end
