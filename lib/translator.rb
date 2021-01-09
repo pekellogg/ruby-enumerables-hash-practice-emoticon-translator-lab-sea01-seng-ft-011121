@@ -7,7 +7,7 @@ def load_library(file_name)
     file[emoticon_name_key] = {"english": value[0], "japanese": value[1]}
     # binding.pry
   end
-  p emoticons
+  p file
 end
 
 load_library('lib/emoticons.yml')
