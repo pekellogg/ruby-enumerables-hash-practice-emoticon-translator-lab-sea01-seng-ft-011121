@@ -38,10 +38,11 @@ load_library('lib/emoticons.yml')
 
 def get_english_meaning(file_name, japanese_emoticon)
   emoticon_library = load_library(file_name)
-  emoticon_libary.fetch(key)
+  emoticon_library.map do |key, value|
     if value[:japanese] == japanese_emoticon
       return key
     end
+  end
 end
 
 get_english_meaning('lib/emoticons.yml', "(＾ｖ＾)")
