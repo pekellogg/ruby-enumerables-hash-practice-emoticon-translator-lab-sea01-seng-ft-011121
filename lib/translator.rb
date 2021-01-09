@@ -34,6 +34,3 @@ load_library('lib/emoticons.yml')
 # end
 
 # get_japanese_emoticon('lib/emoticons.yml', ":)")
-
-
-
