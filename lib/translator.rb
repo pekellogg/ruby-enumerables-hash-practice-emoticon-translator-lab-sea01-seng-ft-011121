@@ -43,6 +43,7 @@ def get_english_meaning(file_name, japanese_emoticon)
         return key
     else # value[:japanese] != japanese_emoticon
         return "Sorry, that emoticon was not found"
+    end
   end
 end
 
